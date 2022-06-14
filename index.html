@@ -1,51 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Destiny Math</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destiny Math</title>
 
-  <script type="text/javascript" src="./main.js" defer></script>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div id="page">
-
+    <script type="text/javascript" src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
     <main>
-      <img src="./assets/analytic.svg" alt="Homem desenhando um gráfico em um quadro branco" />
+      <div id="page">
+          <img src="./assets/analytic.svg" alt="Homem desenhando um gráfico em um quadro branco" />
 
-      <h1>Vou calcular seu destino!</h1>
+          <h1>Vou calcular seu destino!</h1>
 
-      <p>Clique em fazer pergunta e o poder da matemática irá prever o seu futuro.</p>
+          <p>Clique em fazer pergunta e o poder da matemática irá prever o seu futuro.</p>
 
-      <input id="questionInput" type="text" placeholder="Digite sua pergunta" />
-      
-      <button id="questionButton" onclick="doQuestion()">Fazer pergunta</button>
+          <input id="questionInput" type="text" placeholder="Digite sua pergunta" />
+          
+          <button id="questionButton" onclick="doQuestion()">Fazer pergunta</button>
 
-      <h3 id="answer"></h3>
+          <h3 id="answer"></h3>
+      </div>
     </main>
-
-    <div id="feedback">
-
-      <img src="./assets/feedback.svg" alt="Homem em pé ao lado de um balão de falas com estrelas avaliativas dentro">
-
-      <h2>O que você achou da previsão?</h2>
-
-      <p>Ajude a melhorar o resultado dos cálculos que prevêem o futuro.</p>
-
-      <input id="opinionInput" type="text" placeholder="Digite a sua opinião" />
-      
-      <button id="opinionButton" onclick="doThanksNote()">Enviar feedback</button>
-
-      <h3 id="thanks"></h3>
-      
-    </div>
-   
-  
-  </div>
-  
-</body>
-
-
+  </body>
 </html>

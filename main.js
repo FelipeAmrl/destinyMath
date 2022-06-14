@@ -1,8 +1,6 @@
 const answerElement = document.querySelector("#answer")
-const thanksElement = document.querySelector('#thanks')
 const questionInput = document.querySelector("#questionInput")
 const questionButton = document.querySelector('#questionButton')
-const opinionButton = document.querySelector('#opinionButton')
 const answers = [
   "Os cálculos foram positivos para isso!",
   "As probabilidades não estão a favor disso.",
@@ -26,13 +24,6 @@ const answers = [
   "Provavelmente, mesmo que tangencialmente."
 ]
 
-const thanksNote = [
-  "Muito obrigado pelo seu feedback!",
-  "Obrigado! Nossos cálculos serão atualizados.",
-  "Sua contribuição nos ajudará refinar nossos cálculos!"
-]
-
-
 function doQuestion() {
 
   if(questionInput.value == "") {
@@ -54,27 +45,5 @@ function doQuestion() {
   setTimeout(function() {
     answerElement.style.opacity = 0;
     questionButton.removeAttribute("disabled")
-  }, 3000)
-}
-
-function doThanksNote() {
-
-  if(opinionInput.value == "") {
-    alert("Digite seu feedback")
-    return
-  }
-
-  opinionButton.setAttribute("disabled", true)
-
-  const totalThanks = thanksNote.length
-  const randomNumber = Math.floor(Math.random() * totalThanks)
-
-  thanksElement.innerHTML = thanksNote[randomNumber]
-
-  thanksElement.style.opacity = 1;
-
-  setTimeout(function() {
-    thanksElement.style.opacity = 0;
-    opinionButton.removeAttribute("disabled")
   }, 3000)
 }
